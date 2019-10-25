@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pierre's Treats</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="~/css/styles.css">
+    <div class="nav-bar">
+        <p>@Html.ActionLink("Home", "Index", "Home")</p>
+        <p>@Html.ActionLink("See all flavors", "Index", "Flavors")</p>
+        <p>@Html.ActionLink("Add new flavor", "Create", "Flavors")</p>
+        <p>@Html.ActionLink("See all treats", "Index", "Treats")</p>
+        <p>@Html.ActionLink("Add new treat", "Create", "Treats")</p>
+    </div>
+    
+  </head>
+  <body>
+    <div class="container">
+    @RenderBody()
+    </div>
+  </body>
+</html>
