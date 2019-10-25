@@ -5,11 +5,13 @@
 
 @using (Html.BeginForm())
 {
-    @Html.HiddenFor(model => model.TreatID)
-    @Html.LabelFor(model => model.Name)
-    @Html.TextBoxFor(model => model.Name)
-    @Html.LabelFor(model => model.Flavors)
-    @Html.DropDownList("FlavorID")
+    <div class="well">
+        @Html.HiddenFor(model => model.TreatID)
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name)
+        @Html.LabelFor(model => model.Flavors)
+        @Html.DropDownList("FlavorID")
 
-    <input type="submit" value="Save"  class="btn"/>
+        <input type="submit" value="Save"  class="btn"/>
+    </div>
 }

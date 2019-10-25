@@ -6,10 +6,12 @@
 
 @using (Html.BeginForm())
 {
-    @Html.HiddenFor(model => model.FlavorID)
+    <div class="well">
+        @Html.HiddenFor(model => model.FlavorID)
 
-    @Html.Label("Select Treat")
-    @Html.DropDownList("TreatID")
+        @Html.Label("Select Treat")
+        @Html.DropDownList("TreatID")
 
-    <input type="submit" value="Save"  class="btn"/>
+        <input type="submit" value="Save"  class="btn"/>
+    </div>
 }

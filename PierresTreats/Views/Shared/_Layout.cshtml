@@ -11,6 +11,17 @@
         <p>@Html.ActionLink("Add new flavor", "Create", "Flavors")</p>
         <p>@Html.ActionLink("See all treats", "Index", "Treats")</p>
         <p>@Html.ActionLink("Add new treat", "Create", "Treats")</p>
+        @if(User.Identity.IsAuthenticated)
+        {
+          <p>@Html.ActionLink("Logout", "Index", "Account")</p>
+          <p class="username">@User.Identity.Name</p>
+        }
+        else
+        {
+          <p>@Html.ActionLink("Login", "Login", "Account")</p>
+          <p>@Html.ActionLink("Register", "Register", "Account")</p>
+        }
+        
     </div>
     
   </head>

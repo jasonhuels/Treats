@@ -15,16 +15,17 @@
     text-align: center;
   }
   
-  .nav-bar p a{
+  .nav-bar p a, p.username{
     display: inline-block;
     color: white;
+    font-size: 20px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   p a:hover:not(.active) {
-    background-color: rgb(13, 182, 137)
+    background-color: rgb(13, 182, 137);
   }
   
   .btn
@@ -48,13 +49,6 @@ h1, h2
   font-style: italic;
 }
 
-select.form-control
-{
-  width: 20%; 
-  margin-left: auto;
-  margin-right: auto;
-}
-
 a
 {
   font-size: 20px;
@@ -62,8 +56,27 @@ a
   text-decoration: underline;
 }
 
+
+
+
 li
 {
   font-size: 20px;
   padding: 0 0 0 0;
+}
+
+.well
+{
+  border: 5px solid black;
+  border-radius: 350px;
+  background-color: lightgreen;
+  text-align: center;
+  width:  50%;
+  margin: 0 auto 0 auto;
+}
+
+.center
+{
+  text-align: center;
+  margin: 0 auto 0 auto;
 }

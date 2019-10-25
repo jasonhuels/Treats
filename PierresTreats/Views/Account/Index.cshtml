@@ -10,7 +10,9 @@
 }
 else
 {
-    <p>@Html.ActionLink("Register", "Register")</p>
-    <p>@Html.ActionLink("Log in", "Login")</p>
-    <p>@Html.ActionLink("Home", "Index", "Home")</p>
+    <div class="center">
+        <button class="btn">@Html.ActionLink("Register", "Register")</button>
+        <button class="btn">@Html.ActionLink("Log in", "Login")</button>
+        <button class="btn">@Html.ActionLink("Home", "Index", "Home")</button>
+    </div>
 }
