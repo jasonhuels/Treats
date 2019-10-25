@@ -29,6 +29,41 @@
   
   .btn
   {
-    background-color: rgb(112, 121, 218);
+    background-color: rgb(193, 196, 221);
     margin-top: 20px;
   }
+
+  body
+{
+  background-color: rgb(96, 182, 194);
+  height: 100%;
+  position: relative;
+}
+
+h1, h2
+{
+  font-family: cursive;
+  text-align: center;
+  text-shadow: 1px 1px white;
+  font-style: italic;
+}
+
+select.form-control
+{
+  width: 20%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a
+{
+  font-size: 20px;
+  color: black;
+  text-decoration: underline;
+}
+
+li
+{
+  font-size: 20px;
+  padding: 0 0 0 0;
+}

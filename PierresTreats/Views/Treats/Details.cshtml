@@ -24,6 +24,6 @@ else
   </ul>
 }
 
-<p>@Html.ActionLink("Edit treat", "Edit", new { id = Model.TreatID })</p>
-<p>@Html.ActionLink("Delete treat", "Delete", new { id = Model.TreatID })</p>
-<p>@Html.ActionLink("Add a Flavor", "AddFlavor", new { id = Model.TreatID })</p>
+<button class="btn">@Html.ActionLink("Add a Flavor", "AddFlavor", new { id = Model.TreatID })</button>
+<button class="btn">@Html.ActionLink("Edit treat", "Edit", new { id = Model.TreatID })</button>
+<button class="btn">@Html.ActionLink("Delete treat", "Delete", new { id = Model.TreatID })</button>
