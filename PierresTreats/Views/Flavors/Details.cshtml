@@ -1,0 +1,23 @@
+@model PierresTreats.Models.Flavor;
+
+<h2>Flavor Details</h2>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description)</h3>
+
+@if(@Model.Treats.Count == 0)
+{
+  <p>This flavor is not associated with any treats yet.</p>
+}
+else
+{
+  <h4>Treats known for this flavor:</h4>
+  <ul>
+  @foreach(var join in Model.Treats)
+  {
+    <li>@join.Treat.Name</li>
+  }
+  </ul>
+}
+
+<p>@Html.ActionLink("Edit flavor", "Edit", new { id = Model.FlavorID })</p>
+<p>@Html.ActionLink("Delete flavor", "Delete", new { id = Model.FlavorID })</p>
