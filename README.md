@@ -7,12 +7,6 @@
 ## Description
 _A web application for Pierre's treat shop, where users can see all treats and flavors, but only logged in user's can create, update and delete treats/flavors_
 
-## Specifications
-
-| Behavior | Input | Output|
-|---:---|---:---|---:---|
-
-
 ## Setup/Installation Requirements_
 * _Clone this repository_
 * _Navigate to the directory_
